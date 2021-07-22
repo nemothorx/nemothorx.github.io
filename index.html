@@ -141,6 +141,8 @@ Error message and password prompt
 
 <p>This <a class="tc-tiddlylink-external" href="https://tiddlywiki.com" rel="noopener noreferrer" target="_blank">TiddlyWiki</a> contains the following tiddlers:</p><p><ul>
 
+<li>$:/config/AnimationDuration</li>
+
 <li>$:/config/AutoSave</li>
 
 <li>$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/advanced-search</li>
@@ -177,6 +179,10 @@ Error message and password prompt
 
 <li>$:/config/TimestampDisable</li>
 
+<li>$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/fold-bar</li>
+
+<li>$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/info</li>
+
 <li>$:/core</li>
 
 <li>$:/DefaultTiddlers</li>
@@ -199,17 +205,31 @@ Error message and password prompt
 
 <li>$:/SiteTitle</li>
 
+<li>$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.23/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.23/index.html/$:/plugins/tiddlywiki/menubar</li>
+
 <li>$:/state/advancedsearch/currentTab</li>
+
+<li>$:/state/folded/$:/ControlPanel</li>
+
+<li>$:/state/folded/mess</li>
 
 <li>$:/state/folded/TwirlPad</li>
 
 <li>$:/state/sidebar</li>
 
+<li>$:/state/tab--1418380610</li>
+
 <li>$:/state/tab--1498284803</li>
+
+<li>$:/state/tab--1936963165</li>
 
 <li>$:/state/tab--1963855381</li>
 
 <li>$:/state/tab--2112689675</li>
+
+<li>$:/state/tab--86143343</li>
+
+<li>$:/state/tab-1163638994</li>
 
 <li>$:/state/tab-1707114549</li>
 
@@ -222,6 +242,8 @@ Error message and password prompt
 <li>$:/state/tab/moresidebar-1850697562</li>
 
 <li>$:/state/tab/sidebar--595412856</li>
+
+<li>$:/state/tabs/controlpanel/toolbars-1345989671</li>
 
 <li>$:/status/RequireReloadDueToPluginChange</li>
 
@@ -257,6 +279,9 @@ Error message and password prompt
 <!--~~ Ordinary tiddlers ~~-->
 
 <div id="storeArea" style="display:none;">
+<div created="20210722130854016" modified="20210722130854723" title="$:/config/AnimationDuration">
+<pre>200</pre>
+</div>
 <div created="20210722120726866" modified="20210722120730029" title="$:/config/AutoSave">
 <pre>no</pre>
 </div>
@@ -310,6 +335,12 @@ Error message and password prompt
 </div>
 <div created="20210722122628843" modified="20210722122628843" title="$:/config/TimestampDisable">
 <pre>no</pre>
+</div>
+<div created="20210722130553895" modified="20210722130613633" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/fold-bar">
+<pre>hide</pre>
+</div>
+<div created="20210722130525084" modified="20210722130525084" title="$:/config/ViewToolbarButtons/Visibility/$:/core/ui/Buttons/info">
+<pre>show</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="" description="TiddlyWiki5 core" list="readme" name="Core" plugin-priority="0" plugin-type="plugin" title="$:/core" type="application/json" version="5.1.23">
 <pre>{
@@ -10175,9 +10206,8 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20210722122323979" modified="20210722122325115" title="$:/DefaultTiddlers">
-<pre>TwirlPad
-</pre>
+<div created="20210722122323979" modified="20210722130906711" title="$:/DefaultTiddlers">
+<pre>[list[$:/StoryList]]</pre>
 </div>
 <div created="20210722114031640" modified="20210722121447305" title="$:/GitHub/Branch">
 <pre>main</pre>
@@ -10206,8 +10236,17 @@ Error message and password prompt
 <div created="20210722114923438" modified="20210722114929188" title="$:/SiteTitle">
 <pre>TwirlPad</pre>
 </div>
+<div created="20210722130759363" modified="20210722130759363" title="$:/state/add-plugin-info/$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.23/index.html/$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.23/index.html/$:/plugins/tiddlywiki/menubar">
+<pre>yes</pre>
+</div>
 <div created="20210722122839892" modified="20210722122841300" title="$:/state/advancedsearch/currentTab">
 <pre>$:/core/ui/AdvancedSearch/Standard</pre>
+</div>
+<div created="20210722130607432" modified="20210722130609727" title="$:/state/folded/$:/ControlPanel">
+<pre>show</pre>
+</div>
+<div created="20210722130604102" modified="20210722130605895" title="$:/state/folded/mess">
+<pre>show</pre>
 </div>
 <div created="20210722122612280" modified="20210722122615703" title="$:/state/folded/TwirlPad">
 <pre>show</pre>
@@ -10215,40 +10254,55 @@ Error message and password prompt
 <div created="20210722123006420" modified="20210722123009028" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
-<div created="20210722122839892" modified="20210722122841302" title="$:/state/tab--1498284803">
-<pre>$:/core/ui/AdvancedSearch/Standard</pre>
+<div created="20210722130812342" modified="20210722130823509" title="$:/state/tab--1418380610">
+<pre>$:/core/ui/ControlPanel/Plugins/Add/Updates</pre>
 </div>
-<div created="20210722114657852" modified="20210722114657852" title="$:/state/tab--1963855381">
-<pre>$:/core/ui/ControlPanel/Toolbars</pre>
+<div created="20210722122839892" modified="20210722130928225" title="$:/state/tab--1498284803">
+<pre>$:/core/ui/AdvancedSearch/Filter</pre>
+</div>
+<div created="20210722130637677" modified="20210722130637677" title="$:/state/tab--1936963165">
+<pre>$:/core/ui/TiddlerInfo/Tagging</pre>
+</div>
+<div created="20210722114657852" modified="20210722130648491" title="$:/state/tab--1963855381">
+<pre>$:/core/ui/ControlPanel/Palette</pre>
 </div>
 <div created="20210722114642232" modified="20210722122316389" title="$:/state/tab--2112689675">
 <pre>$:/core/ui/ControlPanel/Basics</pre>
 </div>
+<div created="20210722130828576" modified="20210722130829898" title="$:/state/tab--86143343">
+<pre>$:/core/ui/ControlPanel/Plugins/Installed/Languages</pre>
+</div>
+<div created="20210722130502341" modified="20210722130502342" title="$:/state/tab-1163638994">
+<pre>$:/core/ui/MoreSideBar/Plugins/Languages</pre>
+</div>
 <div created="20210722121823998" modified="20210722121823998" title="$:/state/tab-1707114549">
 <pre>$:/core/ui/TiddlerInfo/List</pre>
 </div>
-<div created="20210722113551692" modified="20210722122314679" title="$:/state/tab-1749438307">
+<div created="20210722113551692" modified="20210722130844875" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Info</pre>
 </div>
 <div created="20210722113555944" modified="20210722120750960" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
 </div>
-<div created="20210722120946527" modified="20210722121904842" title="$:/state/tab-567128046">
-<pre>$:/core/ui/TiddlerInfo/List</pre>
+<div created="20210722120946527" modified="20210722130435594" title="$:/state/tab-567128046">
+<pre>$:/core/ui/TiddlerInfo/Tagging</pre>
 </div>
-<div created="20210722122217847" modified="20210722122536047" title="$:/state/tab/moresidebar-1850697562">
-<pre>$:/core/ui/MoreSideBar/All</pre>
+<div created="20210722122217847" modified="20210722130504130" title="$:/state/tab/moresidebar-1850697562">
+<pre>$:/core/ui/MoreSideBar/Explorer</pre>
 </div>
-<div created="20210722113539085" modified="20210722122925623" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/Tools</pre>
+<div created="20210722113539085" modified="20210722130600623" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Recent</pre>
+</div>
+<div created="20210722130617296" modified="20210722130622532" title="$:/state/tabs/controlpanel/toolbars-1345989671">
+<pre>$:/core/ui/ControlPanel/Toolbars/EditToolbar</pre>
 </div>
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20210722122645726" list="[[Turn around, Turn around]] [[what a mess]]" modified="20210722123013647" title="$:/StoryList">
+<div created="20210722130950028" list="[[Turn around, Turn around]] [[what a mess]] TwirlPad" modified="20210722130950028" title="$:/StoryList">
 <pre></pre>
 </div>
-<div created="20210722114651670" modified="20210722114655766" title="$:/theme">
+<div created="20210722114651670" modified="20210722130644906" title="$:/theme">
 <pre>$:/themes/tiddlywiki/snowwhite</pre>
 </div>
 <div author="JeremyRuston" core-version="&gt;=5.0.0" dependents="$:/themes/tiddlywiki/vanilla" description="Emphasises individual tiddlers" name="Snow White" plugin-priority="0" plugin-type="theme" title="$:/themes/tiddlywiki/snowwhite" type="application/json" version="5.1.23">
